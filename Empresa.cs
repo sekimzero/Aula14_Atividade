@@ -1,23 +1,23 @@
 ﻿namespace Aula13_Atividade
 {
-    class Empresa: Administracao
+    public class Empresa : Administracao
     {
-        void Cadastrar()
+        public void Cadastrar()
         {
             
         }
 
-        void Remover()
+        public void Remover()
         {
 
         }
 
-        void Atualizar()
+        public void Atualizar()
         {
 
         }
 
-        void ApresentarTodos()
+        public void ApresentarTodos()
         {
 
         }

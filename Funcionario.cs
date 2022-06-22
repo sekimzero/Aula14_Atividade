@@ -1,11 +1,11 @@
 ﻿namespace Aula13_Atividade
 {
-    class Funcionario
+    public class Funcionario
     {
-        string Nome;
-        string Sobrenome;
-        string Telefone;
-        double Salario;
-        string CPF;
+        public string Nome;
+        public string Sobrenome;
+        public string Telefone;
+        public double Salario;
+        public string CPF;
     }
 }

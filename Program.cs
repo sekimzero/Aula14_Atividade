@@ -2,13 +2,10 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-        
-
-
-
-
+        Aluno aluno = new Aluno();
+            aluno.RegistrarNota(int.Parse(Console.ReadLine()));
 
             
         }

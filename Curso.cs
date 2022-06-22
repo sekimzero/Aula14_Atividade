@@ -1,6 +1,6 @@
 ﻿namespace Aula13_Atividade
 {
-    abstract class Curso: Administracao
+    public abstract class Curso: Administracao
     {
         public override void Cadastrar()
         {

@@ -1,6 +1,6 @@
 ﻿namespace Aula13_Atividade
 {
-   class Aluno
+   public class Aluno
     {
         int Matricula;
         string Nome;
@@ -8,12 +8,12 @@
         string Telefone;
         int[] Notas;
 
-        void Atualizar()
+         public void Atualizar()
         {
 
         }
 
-        void RegistrarNota()
+        public void RegistrarNota(int notinha)
         {
             List<int> notaAluno = new List<int>()
             {
@@ -22,7 +22,7 @@
                7,
                9      
             };
-            notaAluno.Add(4) // Comando para adicionar valor na lista, dentro do parenteses
+            notaAluno.Add(4); // Comando para adicionar valor na lista, dentro do parenteses
 
 
 
@@ -51,7 +51,7 @@
 
 
 
-        void ApresentarNotas()
+        public void ApresentarNotas()
         {
             Console.WriteLine($"1 bimestre / nota {Notas[0]}");
             Console.WriteLine($"2 bimestre / nota {Notas[1]}");
@@ -65,14 +65,14 @@
             */
         }
 
-        void MediaDasNotas()
+        public void MediaDasNotas()
         {
             double mediaDoAluno;
              mediaDoAluno = (Notas[0]+Notas[1]+Notas[2]+Notas[3])/4;
             Console.WriteLine($"Média das notas: {mediaDoAluno}");
         }
 
-        void Estagio()
+        public void Estagio()
         {
             double const mediaParaAprovar = 7;
             double const mediaMaxima = 10;
