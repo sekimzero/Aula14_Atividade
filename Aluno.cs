@@ -1,6 +1,6 @@
 ﻿namespace Aula13_Atividade
 {
-   cclass Aluno
+   class Aluno
     {
         int Matricula;
         string Nome;
@@ -15,36 +15,30 @@
 
         void RegistrarNota()
         {
-            int count;
 
-            foreach (int i in Notas)
-            {
+            Dictionary <int, int> Notas = new Dictionary<int, int>();
 
-            }
+            Notas.Add(0, 9);
+            Notas.Add(1, 6);
+            Notas.Add(2, 5);
+            Notas.Add(3, 4);
+          
+        //    int count;
 
-            for ( count = 0; count <= 4; count++)
-            {
-                Console.WriteLine($"Digite a nota do bimestre {count+1} do aluno: ");
-                int[count] Notas = int.Parse(Console.ReadLine());
 
-                while(!(Notas[count]>=0 && Notas[count]<=10)) {
-                    Console.WriteLine("A nota inserida foi inválida, por favor, insira novamente!");
-                    int[count] Notas = int.Parse(Console.ReadLine());
-                }
-            }
-
-        }
-        //public override string Operacao()
-        //{
-        //    Console.WriteLine("A sua lista é:");
-        //    foreach (string i in Tarefas)
+        //    for ( count = 0; count <= 4; count++)
         //    {
-        //        Console.WriteLine($"-{i}");
+        //        Console.WriteLine($"Digite a nota do bimestre {count+1} do aluno: ");
+        //        int[count] Notas = int.Parse(Console.ReadLine());
 
+        //        while(!(Notas[count]>=0 && Notas[count]<=10)) {
+        //            Console.WriteLine("A nota inserida foi inválida, por favor, insira novamente!");
+        //            int[count] Notas = int.Parse(Console.ReadLine());
+        //        }
         //    }
-        //    Console.WriteLine();
-        //    return "";
+
         //}
+
 
 
         void ApresentarNotas()
