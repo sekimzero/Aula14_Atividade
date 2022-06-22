@@ -15,6 +15,16 @@
 
         void RegistrarNota()
         {
+            List<int> notaAluno = new List<int>()
+            {
+               8,
+               5,
+               7,
+               9      
+            };
+            notaAluno.Add(4) // Comando para adicionar valor na lista, dentro do parenteses
+
+
 
             Dictionary <int, int> Notas = new Dictionary<int, int>();
 
@@ -58,7 +68,7 @@
         void MediaDasNotas()
         {
             double mediaDoAluno;
-            media = (Notas[0]+Notas[1]+Notas[2]+Notas[3])/4;
+             mediaDoAluno = (Notas[0]+Notas[1]+Notas[2]+Notas[3])/4;
             Console.WriteLine($"Média das notas: {mediaDoAluno}");
         }
 
