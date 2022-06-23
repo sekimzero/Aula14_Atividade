@@ -4,17 +4,17 @@
     {
         public static void Main(string[] args)
         {
-            
-
-            Administracao adm = null;
-
-            adm.Cadastrar();
+            var atividade = new Interface();
+            atividade.Inicio();
 
 
 
 
 
-            
+
+
+
+
 
 
 
@@ -27,7 +27,7 @@
             //Console.WriteLine("Escreva as 4 notas:");
             //aluno.RegistrarNota(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
 
-            
+
         }
     }
 }

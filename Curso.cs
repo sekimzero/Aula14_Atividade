@@ -1,10 +1,10 @@
 ﻿namespace Aula13_Atividade
 {
-    public abstract class Curso : Administracao
+    public class Curso : Administracao
     {
 
         Dictionary<int, Aluno> inscrito = new Dictionary<int, Aluno>();
-        public override void Cadastrar()
+        public override void Cadastrar(int v1, string? v2, string? v3, int v4)
         {
             Aluno aluno = new Aluno();
 

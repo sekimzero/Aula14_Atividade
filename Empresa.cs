@@ -4,10 +4,10 @@
     {
         Dictionary<int, Funcionario> empregado = new Dictionary<int, Funcionario>();
 
-        public override void Cadastrar()
+        public override void Cadastrar(int v1, string? v2, string? v3, int v4)
         {
             Funcionario funcionario = new Funcionario();   
-            
+            var registrar = empregado.TryAdd(empregado.Count, funcionario);
         }
 
         public override void Remover(int removerChave)
