@@ -4,8 +4,28 @@
     {
         public static void Main(string[] args)
         {
-        Aluno aluno = new Aluno();
-            aluno.RegistrarNota(int.Parse(Console.ReadLine()));
+            
+
+            Administracao adm = null;
+
+            adm.Cadastrar();
+
+
+
+
+
+            
+
+
+
+            //Aluno aluno = new Aluno();
+            //Console.WriteLine("Digite o nome do aluno");
+            //aluno.Atualizar(int.Parse(Console.ReadLine(), Console.ReadLine(), Console.ReadLine(), int[] Console.ReadLine());
+            //Console.WriteLine("Digite ");
+
+
+            //Console.WriteLine("Escreva as 4 notas:");
+            //aluno.RegistrarNota(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
 
             
         }

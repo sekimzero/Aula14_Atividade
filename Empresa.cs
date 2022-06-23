@@ -2,23 +2,34 @@
 {
     public class Empresa : Administracao
     {
-        public void Cadastrar()
+        Dictionary<int, Funcionario> empregado = new Dictionary<int, Funcionario>();
+
+        public override void Cadastrar()
         {
+            Funcionario funcionario = new Funcionario();   
             
         }
 
-        public void Remover()
+        public override void Remover(int removerChave)
         {
-
+            var remover = empregado.Remove(removerChave);
         }
 
         public void Atualizar()
         {
-
+                 
         }
 
         public void ApresentarTodos()
         {
+
+            foreach (Funcionario funcionario in empregado.Values)
+            {
+                Console.WriteLine($" ** {funcionario.Nome}\n** {funcionario.Sobrenome}\n** {funcionario.Telefone}\n** {funcionario.Salario}\n** {funcionario.CPF}");
+            }
+
+            
+
 
         }
     }
